@@ -68,7 +68,18 @@
         $ ulimit -n (max )
         nginx.conf: event { worker_connections 1000}
     ```
+* Nginx Cache
+    ```
+    server {
+        location ~* \.(css|js|jpg|png|mp4)$ {
+            access_log off;
+            add_header Cache-Control public;
+            add_header Pagma public;
+            add_header Vary Accept-Encoding;
+            expires 1h;
+        }
+    }
+    ```
 
-    
 
 
