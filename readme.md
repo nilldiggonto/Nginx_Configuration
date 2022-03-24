@@ -40,4 +40,12 @@
 
     ```
 
-* 
+* nginx.conf
+    ```
+    //context /scope
+
+        location {}
+
+    //directive
+        server_name google.com
+    ```
