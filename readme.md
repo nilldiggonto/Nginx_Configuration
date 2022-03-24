@@ -48,6 +48,27 @@
 
     //directive
         server_name google.com
+        //Standard Directive
+
+        //Array Directive
+        * Access log
+        * Error log        
+
+        //Action Directive
     ```
+
+* Nginx Process
+    ```
+    $ systemctl status nginx
+    $ nproc (to know how many core i have)
+    $ lscpu (Details of my core)
+    // Master Process
+
+    // Worker Process
+        $ ulimit -n (max )
+        nginx.conf: event { worker_connections 1000}
+    ```
+
+    
 
 
